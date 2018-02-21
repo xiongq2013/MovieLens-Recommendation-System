@@ -1,11 +1,19 @@
 # Databricks notebook source
-# MAGIC %md ## Movie recommender system with Spark machine learning
-# MAGIC ### MovieLens
-# MAGIC MovieLens is a project developed by GroupLens, a research laboratory at the University of Minnesota. MovieLens provides an online movie recommender application that uses anonymously-collected data to improve recommender algorithms. Anyone can try the app for free and get movies recommendations. To help people develop the best recommendation algorithms, MovieLens also released several data sets. In this notebook, we'll use the latest data set, which has two sizes.
-# MAGIC 
-# MAGIC The full data set consists of more than 24 million ratings across more than 40,000 movies by more than 250,000 users. The file size is kept under 1GB by using indexes instead of full string names.
-# MAGIC 
-# MAGIC The small data set is a subset of the full data set. It's generally a good idea to start building a working program with a small data set to get faster performance while interacting, exploring, and getting errors with your data. When we have a fully working program, we can apply the same code to the larger data set, possibly on a larger cluster of processors. We can also minimize memory consumption by limiting the data volume as much as possible, for example, by using indexes.
+""""
+## Movie recommender system with Spark machine learning
+### MovieLens
+MovieLens is a project developed by GroupLens, a research laboratory at the University of Minnesota. 
+MovieLens provides an online movie recommender application that uses anonymously-collected data to improve recommender algorithms. 
+Anyone can try the app for free and get movies recommendations. To help people develop the best recommendation algorithms, 
+MovieLens also released several data sets. In this notebook, we'll use the latest data set, which has two sizes.
+
+The full data set consists of more than 24 million ratings across more than 40,000 movies by more than 250,000 users. 
+The file size is kept under 1GB by using indexes instead of full string names.
+
+The small data set is a subset of the full data set. It's generally a good idea to start building a working program with 
+a small data set to get faster performance while interacting, exploring, and getting errors with your data. When we have 
+a fully working program, we can apply the same code to the larger data set, possibly on a larger cluster of processors. 
+We can also minimize memory consumption by limiting the data volume as much as possible, for example, by using indexes.
 # MAGIC 
 # MAGIC ### Spark machine learning library
 # MAGIC The library has two packages:
