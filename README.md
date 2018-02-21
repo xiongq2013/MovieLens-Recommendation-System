@@ -1,4 +1,4 @@
-# MovieLens-Recommendation-System with Spark Machine Learning
+# MovieLens-Recommendation-System-with-Spark-Machine-Learning
 Key Words: Recommender System, Machine Learning, Learning to Rank.
 
 Tools: Spark, AWS, SQL
