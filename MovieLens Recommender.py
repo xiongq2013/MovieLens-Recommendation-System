@@ -14,22 +14,21 @@ The small data set is a subset of the full data set. It's generally a good idea 
 a small data set to get faster performance while interacting, exploring, and getting errors with your data. When we have 
 a fully working program, we can apply the same code to the larger data set, possibly on a larger cluster of processors. 
 We can also minimize memory consumption by limiting the data volume as much as possible, for example, by using indexes.
-# MAGIC 
-# MAGIC ### Spark machine learning library
-# MAGIC The library has two packages:
-# MAGIC * spark.mllib contains the original API that handles data in RDDs. It's in maintenance mode, but fully supported.
-# MAGIC * spark.ml contains a newer API for constructing ML pipelines. It handles data in DataFrames. It's being actively enhanced.
 
-# COMMAND ----------
+Spark machine learning library
+The library has two packages:
+spark.mllib contains the original API that handles data in RDDs. It's in maintenance mode, but fully supported.
+spark.ml contains a newer API for constructing ML pipelines. It handles data in DataFrames. It's being actively enhanced.
+""""
 
-# MAGIC %md ### 1. Load the data
-# MAGIC We'll create Spark DataFrames, which are similar to R or pandas DataFrames, but can be distributed on a cluster of Spark executors, which can potentially scale up to thousands of machines. DataFrames are one of the easiest and best performing ways of manipulating data with Spark, but they require structured data in formats or sources such as CSV, Parquet, JSON, or JDBC.
-# MAGIC 
+# 1. Load the data
+# We'll create Spark DataFrames, which are similar to R or pandas DataFrames, but can be distributed on a cluster of 
+# Spark executors, which can potentially scale up to thousands of machines. DataFrames are one of the easiest and best 
+# performing ways of manipulating data with Spark, but they require structured data in formats or sources such as CSV, 
+# Parquet, JSON, or JDBC.
 # MAGIC Here we will use files movie.csv and ratings.csv.
 
-# COMMAND ----------
-
-# MAGIC %fs ls /FileStore/tables/movies.csv
+ls /FileStore/tables/movies.csv
 
 # COMMAND ----------
 
